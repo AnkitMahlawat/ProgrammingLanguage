@@ -1,0 +1,90 @@
+<p><center></p>
+
+<h1>Department of Computer Science and Engineering</h1>
+
+<h2>Programming Languages</h2>
+
+<h3>II Semester 2017-18</h3>
+
+<h4>Instructor: [S. Arun-Kumar]</h4>
+
+<h5>Assignment 2</h5>
+
+<h6>A Markdown translator for HTML text + HTML tables from csv format</h6>
+
+<p></center></p>
+
+<p>We need to do the following. Create a markdown+table <em>functional</em> program in SML
+using the functionalities given in <tt>fileIO.sml</tt>.</p>
+
+<ol>
+<li><p>This HTML file <tt>mdtab.txt.html</tt> was produced by running
+<a href="https://daringfireball.net/projects/markdown/syntax">markdown</a> on the text file <tt>mdtab.txt</tt>.
+Use the text file to test your own program.</p></li>
+<li><p>To know about markdown go to the <a href="https://daringfireball.net/projects/markdown/syntax">markdown syntax</a>
+page maintained by John Gruber. Many of the simplifications listed
+below also refer to Gruber's document. </p></li>
+<li><p>Recognize and leave all inline HTML tags unchanged.</p></li>
+<li><p><strong>Headings.</strong> Do not implement the underlining feature of 
+markdown. Implement only the headings defined by hashes. 
+Hence you must implement the 6 levels of headings which 
+are the levels shown in
+the centered lines at the beginning of this document. The
+number of hashes at the beginning of the line indicates the 
+heading level.</p></li>
+<li><p>Implement the following for pure text elements -- 
+Use of double asterisks for <strong>bolding</strong> and single asterisks for
+<em>italics</em>.
+There is nothing in markdown for underlining -- under-scores are
+used for italics and bolding as an alternative to
+asterisks. Instead implement underlining as follows.
+Example: "_underlined_text_" produces <u>underlined text</u>).</p></li>
+<li><p><strong>Horizontal Ruling</strong>. Implement only the code corresponding to
+the use of at least 3 consecutive hypens (---) to produce
+a horizontal line.</p></li>
+<li><p><strong>Block quotes.</strong> Implement only the email-style block-quoting
+(i.e. every line in a block quote should begin with >, 
+otherwise it is not a block quote) along with the nested
+block-quoting.</p></li>
+<li><p><strong>Links.</strong> Implement the direct href produced by the
+using the "[text](http://url/of/the/link)" syntax. Also implement the
+automatic links feature e.g.</p>
+
+<pre><code> &lt;http://www.cse.iitd.ac.in/~sak&gt;
+</code></pre>
+
+<p>renders as <a href="http://www.cse.iitd.ac.in/~sak">http://www.cse.iitd.ac.in/~sak</a> which
+provides the URL and the link to the URL.</p></li>
+<li><p><strong>Lists.</strong> Implement </p>
+
+<ul>
+<li><em>ordered lists</em> -- as given by <a href="https://daringfireball.net/projects/markdown/syntax">John Gruber</a>. Pay particular 
+attention to his 1986 example relating to escape sequencing the
+"." in case 1986 comes at the beginning of a line.</li>
+<li><em>unordered lists</em> -- implement only the hyphen (as done here).</li>
+</ul></li>
+<li><p>Implement tables from csv format. For example the following is</p>
+
+<pre><code> &lt;&lt;
+ 1|2|3|4|9
+ 5|6|7|8|10
+ 11|12|13|14|15
+ &gt;&gt;
+</code></pre>
+
+<p>a possible syntax for an HTML table that looks like</p></li>
+</ol>
+
+<p><CENTER><TABLE border="1">
+  <TR><TD>1</TD><TD>2</TD><TD>3</TD><TD>4</TD><TD>9</TD></TR>
+  <TR><TD>5</TD><TD>6</TD><TD>7</TD><TD>8</TD><TD>10</TD></TR>
+  <TR><TD>11</TD><TD>12</TD><TD>13</TD><TD>14</TD><TD>15</TD></TR>
+</TABLE></CENTER></p>
+
+<ol>
+<li>Since this is as clear as possible and has already been discussed
+in class, I will entertain no individual doubts on any forum. If you
+still have some doubts, <font color=red>make reasonable design
+decisions and explicitly state them as comments at the top of your
+submission file.</li>
+</ol>
